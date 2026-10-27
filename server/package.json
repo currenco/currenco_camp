@@ -1,11 +1,20 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "project managment system for currenco",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Aditya Shriwas",
-  "license": "ISC"
+    "name": "server",
+    "version": "1.0.0",
+    "description": "project managment system for currenco",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js"
+    },
+    "author": "Aditya Shriwas",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^3.1.14",
+        "prettier": "3.9.10"
+    },
+    "dependencies": {
+        "dotenv": "^18.0.9"
+    }
 }
