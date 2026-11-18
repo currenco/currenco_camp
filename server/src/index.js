@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import express from 'express';
+import app from './app.js';
 import morgan from 'morgan';
 import logger from './utils/logger.js';
 import connectDB from './db/db.js';
@@ -8,7 +8,6 @@ dotenv.config({
     path: './.env',
 });
 
-const app = express();
 const morganFormat = ':method :url :status :response-time ms';
 
 app.use(
